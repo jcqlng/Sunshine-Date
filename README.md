@@ -6,6 +6,9 @@ The concept of our project is the facilitation of deciding what to do for date n
 * Food & Drinks
 * Activities
 
+![Website](assets/images/main-site.gif)
+
+
 # Webpage Components
 Libraries​:
 * HTML5
