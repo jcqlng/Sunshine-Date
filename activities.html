@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine D8</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Map API -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+    <!-- Custom Fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+    <!-- Bootstrap Styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Our Stylesheet  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- <a href="#" class="logo">Sunshine D8</a> -->
+        <a href="website.html">
+        <img alt="W3Schools" src="assets/images/logo1.png" width="300" height="80" class="logo">
+
+        <nav>
+            <ul>
+                <li class="navbarSpacing">
+                    <a href="website.html" class="navbartextColor">Home</a>
+                    </li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+    <div class= "container">
+        <div class= "row">
+
+            <div class= "col-md-6">
+
+                <div class= "card">
+
+                    <div class= "card-header">
+                        Activities Found
+                    </div>
+
+                    <div id= "activity-list">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class= "col-md-6">
+                <div class= "card" id= "map-activities"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Top 3 are for bootstrap uses, bottom 2 are our java ref and for ajax, not sure if bootstrap uses everything -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>

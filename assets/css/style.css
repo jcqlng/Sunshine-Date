@@ -1,0 +1,382 @@
+/* ------------------------ Overall page -------------------------- */
+
+body, html { 
+    background: linear-gradient(0deg, rgba(22, 148, 194, 0.742), rgba(4, 36, 48, 0.742)), 
+    /* The next 5 lines of code make the image stay centered on the page, no matter what the viewport size is */
+    url("../images/background-couple.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    font-family: 'Happy Monkey';
+    width: 100%;
+}   
+
+/* Makes it so that when the "links" on the navbar are hovered over
+the blue underline doesn't show up for the user */
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+h1 {
+    font-family:  'Happy Monkey';font-size: 50px;
+    color: white;
+    letter-spacing: 5%;
+    line-height: 75px;
+}
+ 
+h2 {
+    font-family:  'Italiana';font-size: 30px;
+    letter-spacing: 5%;
+    color: white;
+    padding-top: 15px;
+}
+ 
+h3 {
+    font-family:  'Italiana';font-size: 25px;
+    letter-spacing: 5%;
+    color: white;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+
+/* set a style for all buttons*/ 
+button { 
+    background-color: #2196f3; 
+    color: black; 
+    padding: 14px 20px; 
+    margin: 8px 0; 
+    cursor: pointer;  
+}
+
+/* -------------------------- Home nav ----------------------------- */
+
+/* Deals with how the navbar looks on the app */
+header {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #6b8d97;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.logo {
+    padding: 0 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+/* Keeps the navbar items to the right of the header */
+nav {
+    float: right;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav ul li a  {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20 px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.navbartextColor {
+    color: white;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family: 'Happy Monkey';
+}
+
+/* ------------------------- index.html styling ------------------------------ */
+
+.container-intro{
+    margin-top: 150px;
+    margin-left: 50px;
+    width: auto; 
+    padding-left: 30px;
+    margin-bottom: 200px;
+}
+
+.cancelbtn {
+    margin-right: 10px;
+}
+
+/* float cancel and signup buttons and add an equal width */ 
+.cancelbtn, 
+.signupbtn { 
+    float: left; 
+    width: 25% 
+} 
+
+/* define the close button for the modal */ 
+.close { 
+    position: absolute; 
+    right: 35px; 
+    top: 15px; 
+    color: #000; 
+    font-size: 40px; 
+    font-weight: bold; 
+} 
+
+/* define the close hover and focus effects */ 
+.close:hover, 
+.close:focus { 
+    color: #1694C2; 
+    cursor: pointer; 
+} 
+   
+.clearfix::after { 
+    content: ""; 
+    clear: both; 
+    display: table; 
+} 
+
+/* Hides the arrows from type= "number" */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label.x-ray {
+    margin-bottom: 0;
+}
+
+/* ------------------------- Modal styling -------------------------- */
+
+/*define the modal’s background*/ 
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px; 
+} 
+
+/* Got this modal css from https://www.geeksforgeeks.org/create-responsive-modal-sign-form-website/ */
+/*add full-width input fields*/ 
+input[type=text], 
+input[type=password] { 
+    width: 100%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 2px solid #ccc; 
+    box-sizing: border-box; 
+} 
+
+/*define the modal-content background*/ 
+.modal-content { 
+    background-color: #fefefe; 
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888; 
+    width: 80%; 
+} 
+
+/* ------------------------ website.html styling ------------------------ */
+
+/* Centers the text in the navbar list and put space between the items */
+.navbarSpacing {
+    margin: 5px 5px 0 3px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.centerchosenText {
+    margin-top: 50px;
+    text-align: center;
+}
+
+button.chooseHere {
+    margin-top: 70px;
+    color: white;
+    width: 50%;
+}
+
+/* This is the modal for the website.html */
+.modal1 { 
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px; 
+} 
+
+.userInputheader {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.form-box {
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+#search_rest_zip,
+#search_act_zip {
+    padding-left: 22px;
+}
+
+/* -------------------- Restaurants/ Activities pages ------------------------ */
+
+/* This is where the API text is populated */
+.card {
+    color: white;
+    background: none;
+    width: 100%;
+    border: none;
+}
+
+.card-header {
+    text-align: center;
+    background-color: #6b8d97;
+}
+
+/* These are the styling for the appended div inside the card */
+.row1 {
+    padding: 10px;
+    margin: 10px 0;
+    background: #6b8d97;
+}
+
+.row1 img {
+    width: 100%;
+    height: 250px;
+}
+
+.row1 div {
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* ----------------------- Map style ----------------------- */
+
+#map {
+    position: fixed;
+    width: 400px;
+    height: 450px;
+}
+
+#map-activities {
+    position: fixed;
+    width: 400px;
+    height: 450px;
+}
+
+.marker {
+  background-image: url('marker-icon.png');
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+  
+.mapboxgl-popup-content {
+  color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3.mapboxgl-popup-close-button {
+    color: black;
+}
+
+@media screen and (max-width: 601px) { 
+
+    #buttonspacing {
+        margin-bottom: 10px;
+    }
+
+    .container-intro{ 
+        margin-left: 30px;
+    }
+
+    .cancelbtn, 
+    .signupbtn { 
+        width: 100%; 
+    } 
+
+    .indexbuttons {
+        margin-top: 10px;
+    }
+
+}
+
+/* This makes it so the images don't look as bad when the screen size is changed */
+@media screen and (max-width: 769px) {
+
+    .row1 img {
+        width: 100%;
+        height: 150px;
+    }
+
+    #map {
+        position: absolute;
+        width: 500px;
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .row1 img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .userInputheader {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    
+}

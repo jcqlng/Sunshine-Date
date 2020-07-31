@@ -1,0 +1,67 @@
+{
+  "_from": "github:cferdinandi/x-ray",
+  "_id": "x-ray@9.2.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/x-ray",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "cferdinandi/x-ray",
+    "rawSpec": "cferdinandi/x-ray",
+    "saveSpec": "github:cferdinandi/x-ray",
+    "fetchSpec": null,
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "github:cferdinandi/x-ray#72e0860bfa8680c4ba82ac784cc4ec951ac597a4",
+  "_spec": "cferdinandi/x-ray",
+  "_where": "C:\\Users\\missm\\Documents\\CodingBootcampHomeworks\\Week7-8\\Sunshine-D8",
+  "author": {
+    "name": "Chris Ferdinandi",
+    "url": "http://gomakethings.com"
+  },
+  "bugs": {
+    "url": "https://github.com/cferdinandi/x-ray/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Toggle password visibility",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^0.14.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-footer": "^1.0.5",
+    "gulp-header": "^1.8.8",
+    "gulp-jshint": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-markdown": "^1.2.0",
+    "gulp-optimize-js": "^1.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-tap": "^0.1.3",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "jshint-stylish": "^2.2.1",
+    "lazypipe": "^1.0.1",
+    "node-fs": "^0.1.7"
+  },
+  "homepage": "https://github.com/cferdinandi/x-ray#readme",
+  "license": "MIT",
+  "main": "./dist/js/x-ray.min.js",
+  "name": "x-ray",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cferdinandi/x-ray.git"
+  },
+  "version": "9.2.0"
+}

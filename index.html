@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine D8</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Custom Fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+    <!-- Bootstrap Styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Our Stylesheet  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- X-ray link -->
+    <link rel="stylesheet" href="assets/javascript/x-ray/dist/css/x-ray.min.css">
+</head>
+
+<body>
+
+<div class="container-intro">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Date Night for Florida Couples</h1>
+
+            <h2>Plan the perfect date night by finding top-rated restaurants and entertainnment in your city.</h2>
+
+            <h3>Date night was never so easy!</h3>
+
+            <!-- This sets up for us to use a modal for the user to sign up -->
+            <button class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Sign Up</button>
+
+            <!-- Got the model popup from https://www.geeksforgeeks.org/create-responsive-modal-sign-form-website/ -->
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">×
+                </span>
+                <!-- This is the sign up form that will pop up inside of the modal -->
+                <form class="modal-content animate">
+                    
+                    <div class= "container" id= "Email">
+                        <label><b>Email</b></label>
+                        <input id= "EmailInput" type="text" placeholder="Enter Email" require>
+                    </div>
+
+                    <!-- This is a list of what the user needs to put in as a password -->
+                    <div class= "container" id= "PasswordReqs">
+                        <b>Passwords must contain:</b>
+                        <br><br>
+                        <li>At least 8 characters</li>
+                        <li>One number 0-9</li>
+                        <li>A special symbol, including: !, @, #, $, &</li>
+                        <br>
+                    </div>
+                    
+                    <div class= "container" id= "Password">
+                        <label><b>Password</b></label>
+                        <input class= "pw3" id= "PasswordInput" type="password" placeholder="Enter Password" require>
+                    </div>
+
+                    <div class= "container" id= "Password2">
+                        <label></label><b>Repeat Password</b></label>
+                        <input class= "pw3" id= "PasswordVerify" type="password" placeholder="Repeat Password" require>
+                    </div>
+
+                    <!-- This is from the JS library, showing and hiding the passwords that the user types in -->
+                    <div class= "container">
+                        <label class="x-ray">
+                            <input type= "checkbox" data-x-ray= ".pw3" data-default= "show" checked>
+                            Show Passwords
+                        </label>
+                    </div>
+
+                    <div class="container clearfix" id= "buttonspacing">
+                        <span>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="btn btn-secondary cancelbtn">Cancel
+                        </button>
+                                
+                        <button onclick= "window.location.href= 'https://zalina4813.github.io/Sunshine-D8/website.html'" class= "btn btn-primary signupbtn" type="button">
+                            Sign Up
+                        </button>
+                        </span>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Email Validator -->
+<script type="text/javascript" src="assets/javascript/validator/validator.min.js"></script> 
+<!-- Checkbox to hide and show password -->
+<script defer src="assets/javascript/x-ray/dist/js/x-ray.min.js"></script>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+        xray.init();
+    })
+</script>
+
+<!-- Top 3 are for bootstrap uses, bottom 2 are our java ref and for ajax, not sure if bootstrap uses everything -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src= "./assets/javascript/app.js"></script>
+</body>
+
+</html>
